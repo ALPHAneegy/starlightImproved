@@ -8763,9 +8763,11 @@ function Starlight:CreateWindow(WindowSettings)
 				-- que es el que si funciona.
 				Groupbox.CreateDropdown = function(self, ElementSettings)
 					ElementSettings = ElementSettings or {}
+					local rowIndex = ElementSettings.Name or "Dropdown"
 					local Row = Groupbox.CreateLabel(
 						Groupbox,
-						{ Name = ElementSettings.Name or "Dropdown" }
+						{ Name = ElementSettings.Name or "Dropdown" },
+						rowIndex
 					)
 					local t0 = tick()
 					while Row.Instance == nil and tick() - t0 < 5 do
