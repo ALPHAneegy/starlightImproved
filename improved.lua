@@ -4,6 +4,7 @@ local debugV = false
 local Starlight = {
 
 	InterfaceBuild = "B5B9",
+	VroyPatched = "1.1",
 
 	WindowKeybind = "K",
 
